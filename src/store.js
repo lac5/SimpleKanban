@@ -23,11 +23,20 @@ export function getTaskId(task) {
     return task[id];
 }
 
+export function getTaskIndex(taskId, tasks) {
+    for (let i = 0, len = tasks.length; i < len; i++) {
+        if (tasks[i][id] && tasks[i][id] === taskId) {
+            return i;
+        }
+    }
+    return -1;
+}
+
 export function popTask(taskId) {
     for (let board of jsonData.data) {
         for (let i = 0, len = board.tasks.length; i < len; i++) {
             let task = board.tasks[i];
-            if (getTaskId(task) === taskId) {
+            if (task[id] && task[id] === taskId) {
                 board.tasks.splice(i, 1);
                 json.update(x => x);
                 return task;

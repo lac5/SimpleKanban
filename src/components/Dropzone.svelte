@@ -1,5 +1,5 @@
 <script>
-import { json, popTask } from '../store';
+import { json, popTask, getTaskIndex } from '../store';
 export let index;
 export let tasks;
 
@@ -17,10 +17,11 @@ export const clearDrop = () => {
 export const drop = (event) => {
     event.preventDefault();
     let id = event.dataTransfer.getData("text/plain");
+    let previousIndex = getTaskIndex(id, tasks);
     let task = popTask(id);
     console.log('%s = %o', id, task);
     if (task) {
-        tasks.splice(index, 0, task);
+        tasks.splice(previousIndex > -1 && previousIndex <= index ? index - 1 : index, 0, task);
         json.update(x => x);
     }
     clearDrop();
