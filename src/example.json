@@ -1,0 +1,60 @@
+{
+  "meta": {
+    "title": "Kanban Board",
+    "description": "Drag and drop between swim lanes"
+  },
+  "data": [
+    {
+      "board": "To Do",
+      "tasks": [
+        {
+          "title": "TSK-154",
+          "description": "This is a description of a item on the board."
+        },
+        {
+          "title": "TSK-156",
+          "description": "This is a description of a item on the board."
+        },
+        {
+          "title": "TSK-157",
+          "description": "This is an item on the board. There is some descriptive text that explains the item here."
+        }
+      ]
+    },
+    {
+      "board": "In-progess",
+      "tasks": [
+        {
+          "title": "TSK-152",
+          "description": "This is a task that is being worked on"
+        },
+        {
+          "title": "TSK-153",
+          "description": "Another task here that is in progress."
+        }
+      ]
+    },
+    {
+      "board": "Review",
+      "tasks": [
+        {
+          "title": "TSK-158",
+          "description": "This is a description of a item on the board."
+        }
+      ]
+    },
+    {
+      "board": "Complete",
+      "tasks": [
+        {
+          "title": "TSK-144",
+          "description": "This is a description of an item."
+        },
+        {
+          "title": "TSK-146",
+          "description": "This is a description of a task item."
+        }
+      ]
+    }
+  ]
+}
