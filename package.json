@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larryc5/SimpleKanban.git"
+    "url": "git+https://github.com/lac5/SimpleKanban.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/larryc5/SimpleKanban/issues"
+    "url": "https://github.com/lac5/SimpleKanban/issues"
   },
-  "homepage": "https://github.com/larryc5/SimpleKanban#readme",
+  "homepage": "https://github.com/lac5/SimpleKanban#readme",
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
